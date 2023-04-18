@@ -1,0 +1,183 @@
+.body{
+
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    border-width: 2%;
+    border-style: groove;
+    border-color: black;
+}
+.name{
+    padding-top: 2%;
+    display: flex;
+}
+.name1{
+    margin-left: 18%;
+}
+.name2{
+    margin-left: 18%;
+}
+.grade{
+    text-align: left;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    display: flex;
+}
+.grade1{
+    margin-left: 18%;
+}
+.grade2{
+    margin-left: 30%
+}
+.admno{
+    text-align: left;
+    padding-bottom: 2%;
+    display: flex;
+}
+.admno1{
+    margin-left: 18%;
+}
+.admno2{
+    margin-left: 27.5%
+}
+.rollno{
+    text-align: left;
+    padding-bottom: 2%;
+    display: flex;
+}
+.rollno1{
+    margin-left: 18%;
+}
+.rollno2{
+    margin-left: 20.5%
+}
+.dob{
+    text-align: left;
+    padding-bottom: 2%;
+    display: flex;
+}
+.dob1{
+    margin-left: 18%;
+}
+.dob2{
+    margin-left: 23%
+}
+
+.age{
+    text-align: left;
+    padding-bottom: 2%;
+    display: flex;
+}
+.age1{
+    margin-left: 18%;
+}
+.age2{
+    margin-left: 23%;
+}
+.gender{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.gender1{
+    margin-left: 18%;
+}
+.gender2{
+    width: 40%;
+    margin-left: 18.5%;
+    display: flex;
+}
+.type{
+    padding-left: 15%;
+}
+.address{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.address1{
+    margin-left: 18%;
+}
+.address2{
+    margin-left: 5.9%;
+}
+.number{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.number1{
+    margin-left: 18%;
+}
+.number2{
+    margin-left: 10.6%;
+}
+.email{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.email1{
+    margin-left: 22%;
+}
+.email2{
+    margin-left: 20.6%;
+}
+.fathername{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.fname1{
+    margin-left: 22%;
+}
+.fname2{
+    margin-left: 11.5%;
+}
+.fphnno{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.fphnno1{
+    margin-left: 22%;
+}
+.fphnno2{
+    margin-left: 10.5%;
+}
+.mothername{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.mname1{
+    margin-left: 22%;
+}
+.mname2{
+    margin-left: 10.5%;
+}
+.mphnno{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.mphnno1{
+    margin-left: 22%;
+}
+.mphnno2{
+    margin-left: 9.5%;
+}
+.phnno{
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+}
+.phnno1{
+    margin-left: 22%;
+}
+.phnno2{
+    margin-left: 6%;
+}
+.submit{
+    padding: 5%;
+}
