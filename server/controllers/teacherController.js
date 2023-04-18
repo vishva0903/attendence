@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 // User model
-const Student = require("../models/studentSchema");
+const Teacher = require("../models/teacherSchema");
 
 // Input validation
 const SignupValidator = require("../validator/signupValidator");
@@ -22,13 +22,13 @@ module.exports = {
         if (!isValid) {
             res.status(404).json(errors);
         } else {
-            await Student.findOne({ email }).then(async (exist) => {
+            await Teacher.findOne({ email }).then(async (exist) => {
             if (exist) {
                 errors.email = "Email already in use";
                 res.status(404).json(errors);
             } else {
                 const hashedpassword = bcrypt.hashSync(password, 8);
-                const result = await Student.create({
+                const result = await Teacher.create({
                 firstName,
                 lastName,
                 email,
@@ -56,20 +56,20 @@ module.exports = {
                 console.log("Validation error");
                 res.status(404).json(errors);
             } else {
-                await Student.findOne({ email }).then(async (student) => {
-                if (!student) {
+                await Teacher.findOne({ email }).then(async (teacher) => {
+                if (!teacher) {
                     errors.email =
                     "Email does not exist ! please Enter the right Email or You can make account";
                     res.status(404).json(errors);
                 }
                 // Compare sent in password with found user hashed password
-                const passwordMatch = bcrypt.compareSync(password, student.password);
+                const passwordMatch = bcrypt.compareSync(password, teacher.password);
                 if (!passwordMatch) {
                     errors.password = "Wrong Password";
                     res.status(404).json(errors);
                 } else {
                     // generating a token and storing it in a cookie
-                        const token = jwt.sign({ _id: student._id, role: student.role }, "sooraj_DOING_GOOD",
+                        const token = jwt.sign({ _id: teacher._id, role: teacher.role }, "sooraj_DOING_GOOD",
                         {
                             expiresIn: "8h",
                         });
@@ -79,9 +79,9 @@ module.exports = {
                             sameSite: "lax",
                         };
                         const data = {
-                            id: student._id,
+                            id: teacher._id,
                         };
-                        res.status(201).json({ token, role: student.role });
+                        res.status(201).json({ token, role: teacher.role });
                         000
                 }
                 });
