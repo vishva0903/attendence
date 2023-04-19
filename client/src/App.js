@@ -1,25 +1,24 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import Regform from './Components/Student/Regform/index';
-import Loginform from './Components/Student/Loginform/index';
-import{Link, BrowserRouter, Routes, Route} from 'react-router-dom';
+import AddClass from './Components/Admin/AddClass';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-    <><BrowserRouter>
+    <>
+      <BrowserRouter>
 
-      {/* <Link to="/Regform">Regform</Link>
-      <Link to ="/Loginform">Login</Link> */}
+        {/* <Link to="/Regform">Regform</Link>
+        <Link to ="/Loginform">Login</Link> */}
 
-      <Routes>
-        <Route path="/Regform" element={<Regform />} />
-        <Route path ="/Loginform" element = {<Loginform/>} />
+        <Routes>
+          <Route path="/Regform" element={<Regform />} />
+          <Route path="/AddClass" element={<AddClass />} />
+        </Routes>
 
-      </Routes>
 
-
-    </BrowserRouter>
+      </BrowserRouter>
 
     </>
   );
