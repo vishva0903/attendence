@@ -6,15 +6,16 @@ import Signup from './Components/Signup/signup';
 import Password from './Components/Password/password';
 import SDashboard from './Components/Student/SDashboard/dashboard';
 import Regform from './Components/Student/Regform/index';
-import Viewattendance from './Components/Student/Viewattendance/attendance';
+import Sviewattendance from './Components/Student/Sviewattendance/Sviewattendance';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-function App() {
+function App() {  
   return (
-    <><BrowserRouter>
+    <>
+      <BrowserRouter>
 
       <Routes>
         <Route path="/Home" element={<Home />} />
@@ -23,10 +24,14 @@ function App() {
         <Route path="/Password" element={<Password />} />
         <Route path="/SDashboard" element={<SDashboard />} />
         <Route path="/Regform" element={<Regform />} />
-        <Route path="/Viewattendance" element={<Viewattendance />} />
+        <Route path="/Sviewattendance" element={<Sviewattendance />} />
       </Routes>
 
-    </BrowserRouter>
+    
+       
+
+
+      </BrowserRouter>
 
     </>
   );

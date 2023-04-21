@@ -1,6 +1,6 @@
 import React , {useState}from 'react';
-import './attendance.css';
-function Attendance(){
+import './Sviewattendance.css';
+function Sviewattendance(){
     const[cls, setCls] = useState(" ");
     const[batch, setBatch] = useState(" ");
     const[date, setDate] = useState(" ");
@@ -73,4 +73,4 @@ function Attendance(){
         </div>
         );
     }
-    export default Attendance;
+    export default Sviewattendance;
