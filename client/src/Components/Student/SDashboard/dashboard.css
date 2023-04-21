@@ -1,0 +1,94 @@
+.scontainer{
+    background-color: rgb(247, 242, 234);
+    margin: 1%;
+    height: 550px;
+}
+.nav{
+    background-color: rgb(1, 139, 139);
+    display: flex;
+    height: 7%;
+}
+.sheading{
+    color: white;
+    width: 30%;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 5%;
+} 
+.sicon{
+    width: 5%;
+    height: 65%;
+    margin-left: 62%; 
+    margin-bottom: 1%;
+    margin-top: .5%;
+}
+.sicon1{
+   width: 45%;
+   height: 90%;
+   margin-left: 25%;
+
+}
+.sidenav{
+    background-color: #b3dcdc;
+    width: 16%;
+    height: 93%;
+}
+.sidenav1{
+    height: .5%;
+}
+.snreg{
+    background-color: #b3dcdc;
+    border: #b3dcdc;
+    width: 100%;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 14%;
+    font-size: 16px;
+    padding-bottom: 15%;
+    padding-top: 35%;
+}
+.snreg:hover{
+    background-color: rgb(1, 139, 139);
+}
+.snatt{
+    background-color: #b3dcdc;
+    border: #b3dcdc;
+    width: 100%;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 14%;
+    font-size: 16px;
+    padding-bottom: 15%;
+    padding-top: 15%;
+}
+.snatt:hover{
+    background-color: rgb(1, 139, 139);
+}
+.sntt{
+    background-color: #b3dcdc;
+    border: #b3dcdc;
+    width: 100%;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 14%;
+    font-size: 16px;
+    padding-bottom: 15%;
+    padding-top: 15%;
+}
+.sntt:hover{
+    background-color: rgb(1, 139, 139);
+}
+.snrpt{
+    background-color: #b3dcdc;
+    border: #b3dcdc;
+    width: 100%;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 14%;
+    font-size: 16px;
+    padding-bottom: 15%;
+    padding-top: 15%;
+}
+.snrpt:hover{
+    background-color: rgb(1, 139, 139);
+}
