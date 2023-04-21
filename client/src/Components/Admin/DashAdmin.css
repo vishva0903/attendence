@@ -1,0 +1,28 @@
+body{
+    background-color: gainsboro;
+}
+h1{
+    text-align: center;
+    padding: 1.5rem;
+    color: black;
+}
+.dash{
+    margin-top: -1.5rem;
+    background-color: whitesmoke;
+}
+.sidebar{
+    
+    margin-top: -7.5rem;
+    background-color: black;
+    flex-direction: column;
+    display: flex;
+    max-width: 15rem;
+    height: 100vh;
+}
+.link{
+    color: rgb(233, 233, 218);
+    margin-top: 9rem;
+    text-align: center;
+    padding: 2rem;
+}
+

@@ -1,23 +1,24 @@
-.head{
+
+.viewclass-head{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 22rem;
-    margin-bottom: .5rem;
+    height: 2rem;
+    padding: 0rem;
 }
 
-.addclass{
+.ViewClass{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    max-width: 40rem;
+    max-width: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10rem;
-    width: 280px; 
-    height: 100px; 
-    gap: .5rem; /*to provide gap b/w elements*/
-    box-shadow: 0 0 10px rgba(12, 11, 11, 0.5); 
+    padding: 5rem;
+    width: 100%; 
+    height: 100%; 
+    gap: -100rem; /*to provide gap b/w elements*/
+    box-shadow: 0 0 10px rgba(19, 18, 18, 0.5); 
     margin: auto;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
