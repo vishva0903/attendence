@@ -26,11 +26,15 @@ function Regform(){
 
 
     return( <><div class="body"><h1>REGISTRATION FORM</h1><br></br>
-        <h3>PERSONAL DETAILS</h3>
+        <div class="heading1"><h3>PERSONAL DETAILS</h3></div>
         <label>
-            <div class="name">
-                <div class="name1">Student's Name </div>
-                <div class="name2"><input type = "text" value = {name} onChange = {(e) => setName(e.target.value)} /><br></br></div>
+            <div class="fnam">
+                <div class="fnam1">First Name </div>
+                <div class="fnam2"><input type = "text" value = {name} onChange = {(e) => setName(e.target.value)} /><br></br></div>
+            </div>
+            <div class="lnam">
+                <div class="lnam1">Last Name </div>
+                <div class="lnam2"><input type = "text" value = {name} onChange = {(e) => setName(e.target.value)} /><br></br></div>
             </div>
             <div class="grade">
                 <div class="grade1">Class </div>

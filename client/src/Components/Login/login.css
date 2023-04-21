@@ -1,0 +1,74 @@
+.loginbody{
+    padding-top: 2%;
+    text-align: center;
+    width: 45%;
+    margin-left: 28%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-image: url(./background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+h1{
+    text-align: center;
+}
+.logname{
+    width: 90%;
+    text-align: justify;
+    padding-top: 5%; 
+    display: flex;
+}
+.userid1{
+    margin-left: 26%;
+}
+.userid2{
+    margin-left: 13%;
+}
+.logpswd{
+    width: 90%;
+    text-align: center;
+    padding-bottom: 8%;
+    padding-top: 3%;
+    display: flex;
+}
+.psswd1{
+    margin-left: 26%;
+}
+.psswd2{
+    margin-left: 10%;
+}
+.forgot{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+}
+.signinbtn{
+    background-color: rgb(1, 139, 139);
+    border: rgb(1, 139, 139);
+    color: white;
+    border-radius: 50%;
+    width: 20%;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.login:hover{
+    background-color: darkorange;
+}
+.lhead{
+    padding-bottom: 3%;
+    text-align: center;
+}
+.signuplnk{
+    padding-bottom: 15%; 
+    text-align: center; 
+}
+a{
+    text-decoration: none;
+    color: darkblue;
+}

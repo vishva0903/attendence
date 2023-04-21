@@ -1,23 +1,30 @@
 // import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home/home';
+import Login from './Components/Login/login';
+import Signup from './Components/Signup/signup';
+import Password from './Components/Password/password';
+import SDashboard from './Components/Student/SDashboard/dashboard';
 import Regform from './Components/Student/Regform/index';
-import Loginform from './Components/Student/Loginform/index';
-import{Link, BrowserRouter, Routes, Route} from 'react-router-dom';
+import Viewattendance from './Components/Student/Viewattendance/attendance';
+
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <><BrowserRouter>
 
-      {/* <Link to="/Regform">Regform</Link>
-      <Link to ="/Loginform">Login</Link> */}
-
       <Routes>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Password" element={<Password />} />
+        <Route path="/SDashboard" element={<SDashboard />} />
         <Route path="/Regform" element={<Regform />} />
-        <Route path ="/Loginform" element = {<Loginform/>} />
-
+        <Route path="/Viewattendance" element={<Viewattendance />} />
       </Routes>
-
 
     </BrowserRouter>
 

@@ -1,20 +1,38 @@
 .body{
-
+    margin-top: 3%;
+    margin-bottom: 3%;
     text-align: center;
-    width: 50%;
-    margin-left: 25%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
     border-width: 2%;
     border-style: groove;
     border-color: black;
 }
-.name{
-    padding-top: 2%;
-    display: flex;
+.heading1{
+    text-align: left;
+    margin-left: 3%;
 }
-.name1{
+.fnam{
+    padding-top: 1%;
+    display: flex;
+    text-align: left;
+}
+.fnam1{
+    margin-left: 4%;
+}
+.fnam2{
     margin-left: 18%;
 }
-.name2{
+.lnam{
+    padding-top: 2%;
+    display: flex;
+    text-align: left;
+}
+.lnam1{
+    margin-left: 4%;
+}
+.lnam2{
     margin-left: 18%;
 }
 .grade{
@@ -49,7 +67,7 @@
     margin-left: 18%;
 }
 .rollno2{
-    margin-left: 20.5%
+    margin-left: 28.5%
 }
 .dob{
     text-align: left;
@@ -60,7 +78,7 @@
     margin-left: 18%;
 }
 .dob2{
-    margin-left: 23%
+    margin-left: 30.7%
 }
 
 .age{
@@ -72,7 +90,7 @@
     margin-left: 18%;
 }
 .age2{
-    margin-left: 23%;
+    margin-left: 31.3%;
 }
 .gender{
     padding-bottom: 2%;
@@ -84,7 +102,7 @@
 }
 .gender2{
     width: 40%;
-    margin-left: 18.5%;
+    margin-left: 26.7%;
     display: flex;
 }
 .type{
@@ -99,7 +117,7 @@
     margin-left: 18%;
 }
 .address2{
-    margin-left: 5.9%;
+    margin-left: 14%;
 }
 .number{
     padding-bottom: 2%;
@@ -110,7 +128,7 @@
     margin-left: 18%;
 }
 .number2{
-    margin-left: 10.6%;
+    margin-left: 18.7%;
 }
 .email{
     padding-bottom: 2%;
@@ -118,10 +136,10 @@
     display: flex;
 }
 .email1{
-    margin-left: 22%;
+    margin-left: 18%;
 }
 .email2{
-    margin-left: 20.6%;
+    margin-left: 28.5%;
 }
 .fathername{
     padding-bottom: 2%;
@@ -129,10 +147,10 @@
     display: flex;
 }
 .fname1{
-    margin-left: 22%;
+    margin-left: 18%;
 }
 .fname2{
-    margin-left: 11.5%;
+    margin-left: 19.5%;
 }
 .fphnno{
     padding-bottom: 2%;
@@ -140,10 +158,10 @@
     display: flex;
 }
 .fphnno1{
-    margin-left: 22%;
+    margin-left: 18%;
 }
 .fphnno2{
-    margin-left: 10.5%;
+    margin-left: 18.5%;
 }
 .mothername{
     padding-bottom: 2%;
@@ -151,10 +169,10 @@
     display: flex;
 }
 .mname1{
-    margin-left: 22%;
+    margin-left: 18%;
 }
 .mname2{
-    margin-left: 10.5%;
+    margin-left: 18%;
 }
 .mphnno{
     padding-bottom: 2%;
@@ -162,10 +180,10 @@
     display: flex;
 }
 .mphnno1{
-    margin-left: 22%;
+    margin-left: 18%;
 }
 .mphnno2{
-    margin-left: 9.5%;
+    margin-left: 17%;
 }
 .phnno{
     padding-bottom: 2%;
@@ -173,11 +191,11 @@
     display: flex;
 }
 .phnno1{
-    margin-left: 22%;
+    margin-left: 17.8%;
 }
 .phnno2{
-    margin-left: 6%;
+    margin-left: 13.8%;
 }
 .submit{
-    padding: 5%;
+    padding: 15%;
 }
