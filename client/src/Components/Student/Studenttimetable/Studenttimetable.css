@@ -1,4 +1,4 @@
-.acontainer {
+.stdttcontainer {
     background-color: rgb(247, 242, 234);
     margin: 1%;
     height: 850px;
@@ -6,7 +6,7 @@
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
                 rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.acontainer1 {
+.stdttcontainer1 {
     background-color: rgb(1, 139, 139);
     color: white;
     font-weight: bold;
@@ -15,7 +15,7 @@
     text-align: center;
     padding-top: 1%;
 }
-.acontainer2{
+.stdttcontainer2{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
                 rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -24,41 +24,29 @@
     height: 10%;
     display: flex;
 }
-.cls{
+.stdttcls{
     width: 12%;
     padding-top: 1%;
     padding-left: 5%;
 }
-.sel{
+.stdttdrop1{
     padding-right: 42%;
     padding-left: 4%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.div{
+.stdttdiv{
     width: 12%;
     padding-top: 1%;
     padding-left: 5%;
 }
-.sel1{
+.stdttdrop2{
     padding-right: 42%;
     padding-left: 4%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.date{
-    width: 12%;
-    padding-top: .9%;
-    padding-left: 5%;
-}
-.sel2{
-    padding-right: 40%;
-    padding-left: 4%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-}
-.search{
-    
+.ttsearch{
     display: inline-block;
     outline: 0;
     border: 0;
@@ -72,17 +60,14 @@
     box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
     transition: all .2s ease-out;
     background-color: rgb(1, 139, 139);
-    
-
 }
-.search:hover{
+.ttsearch:hover{
     box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
     background-color: #006570;
 }
-.searchbutton{
+.ttsearchbutton{
     margin-left: 15%;
     width: 10%;
     margin-top: 1.5%;
     margin-bottom: 1%;
 }
-

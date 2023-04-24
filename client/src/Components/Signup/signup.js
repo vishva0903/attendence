@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
 import './signup.css';
 function Signup() {
     const [fname, setFname] = useState(" ");
@@ -19,6 +21,7 @@ function Signup() {
         <label>
             <div class="shead">Dont't have an account ?</div>
             <div class="signlnk"><a href="http://localhost:3000/Login">Sign in </a></div>
+            {/* <Link to={Signin}>{Login}</Link> */}
             <div class="fname">
                 <div class="fnames1">First Name </div>
                 <div class="fnames2"><input type="text" value={fname} onChange={(e) => setFname(e.target.value)} /><br></br></div>
@@ -33,7 +36,7 @@ function Signup() {
             </div>
             <div class="signpswd">
                 <div class="pswd1">Password </div>
-                <div class="pswd2"><input type="text" value={password} onChange={(e) => setPassword(e.target.value)} /><br></br></div>
+                <div class="pswd2"><input type="password" value={password} onChange={(e) => setPassword(e.target.value)} /><br></br></div>
             </div>
             {/* <div class="drop">
                 <div class="drop1">Choose </div>

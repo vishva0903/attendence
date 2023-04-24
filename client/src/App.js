@@ -7,6 +7,7 @@ import Password from './Components/Password/password';
 import SDashboard from './Components/Student/SDashboard/dashboard';
 import Regform from './Components/Student/Regform/index';
 import Sviewattendance from './Components/Student/Sviewattendance/Sviewattendance';
+import Studenttimetable from './Components/Student/Studenttimetable/Studenttimetable';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/SDashboard" element={<SDashboard />} />
         <Route path="/Regform" element={<Regform />} />
         <Route path="/Sviewattendance" element={<Sviewattendance />} />
+        <Route path="/Studenttimetable" element={<Studenttimetable />} />
       </Routes>
 
     
