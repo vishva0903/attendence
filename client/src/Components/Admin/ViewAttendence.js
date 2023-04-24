@@ -1,7 +1,27 @@
-import { React } from 'react';
+import { React, useState } from 'react';
+import axios from 'axios';
 import './ViewAttendence.css';
-// import axios from 'axios';
 function ViewAttendence() {
+
+    const [form, setForm] = useState({})
+    const onChangeHandler = (event) => {
+        setForm({
+            ...form,
+            [event.target.name]: event.target.value
+        })
+        console.log(form);
+    }
+    const onSubmitHandler = (event) => {
+        console.log(form, "from data")
+
+        axios.post("http://localhost:5000/user123", form)
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((err) => console.log(err))
+        event.preventDefault();
+
+    }
     const data = [
         { id: 1, name: 'Alice' },
         { id: 2, name: 'Bob' },
@@ -142,7 +162,7 @@ function ViewAttendence() {
                 </table>
             </div>
             <div className='button'>
-                    <button>Submit</button>
+                    <button type='submit' onClick={onSubmitHandler}>Submit</button>
             </div>
         </>
 

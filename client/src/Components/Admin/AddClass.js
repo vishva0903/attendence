@@ -57,7 +57,7 @@ function AddClass() {
                     <button allign="center" type="Submit">Submit</button>
                 </div>
                 
-            </form >
+            </form>
         </>
     )
 }

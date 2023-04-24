@@ -12,7 +12,7 @@ h1{
 }
 .sidebar{
     
-    margin-top: -7.5rem;
+    margin-top: -10.3rem;
     background-color: black;
     flex-direction: column;
     display: flex;
@@ -21,8 +21,28 @@ h1{
 }
 .link{
     color: rgb(233, 233, 218);
-    margin-top: 9rem;
+    margin-top: 12rem;
     text-align: center;
-    padding: 2rem;
 }
+h5{
+    color: aliceblue;
+    margin-bottom: 25%;
+}
+.adicon{
+    width: 5%;
+    height: 65%;
+    margin-left: 95%; 
+    margin-bottom: 1%;
+    margin-top: .5%;
+}
+.adicon1{
+   width: 45%;
+   height: 90%;
+   margin-left: 35%;
 
+}
+.button{
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}

@@ -8,10 +8,13 @@ import SDashboard from './Components/Student/SDashboard/dashboard';
 import Regform from './Components/Student/Regform/index';
 import Sviewattendance from './Components/Student/Sviewattendance/Sviewattendance';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AddClass from './Components/Admin/AddClass';
 import ViewStudent from './Components/Admin/ViewStudent';
 import ViewClass from './Components/Admin/ViewClass';
 import ViewAttendence from './Components/Admin/ViewAttendence';
 import DashAdmin from './Components/Admin/DashAdmin';
+import StudentLogin from './Components/Admin/StudentLogin';
+import TeacherLogin from './Components/Admin/TeacherLogin';
 
 function App() {
   return (
@@ -32,6 +35,8 @@ function App() {
           <Route path="/Admin/ViewClass" element={<ViewClass />} />
           <Route path="/Admin/ViewAttendence" element={<ViewAttendence />} />
           <Route path="/Admin/DashAdmin" element={<DashAdmin />} />
+          <Route path="/Admin/StudentLogin" element={<StudentLogin />} />
+          <Route path="/Admin/TeacherLogin" element={<TeacherLogin />} />
         </Routes>
 
   
