@@ -1,10 +1,10 @@
-const AddClass = require("../models/ClassSchema");
+const AddAdminClass = require("../models/ClassSchema");
 module.exports = {
 
     // post
 
     addClass: async (req, res) => {
-        const data = new AddClass({
+        const data = new AddAdminClass({
             Class: req.body.Class,
             Division: req.body.Division,
             TeacherName: req.body.TeacherName,
@@ -28,7 +28,7 @@ module.exports = {
 
     ClassDetails: async (req, res) => {
         try {
-            const subject = await AddClass.find();
+            const subject = await AddAdminClass.find();
             res.json(subject);
         } catch (error) {
             res.status(500).json({ message: error.message });
@@ -39,7 +39,7 @@ module.exports = {
 
     deleteClass: async (req, res) => {
         try {
-            const subject = await AddClass.findByIdAndDelete(req.params.id);
+            const subject = await AddAdminClass.findByIdAndDelete(req.params.id);
             if (!subject) throw Error("No user found");
             res.status(200).json({ success: true });
         } catch (error) {
@@ -52,7 +52,7 @@ module.exports = {
 
     editClass: async (req, res) => {
         try {
-            await AddClass.findByIdAndUpdate(req.params.id, {
+            await AddAdminClass.findByIdAndUpdate(req.params.id, {
                 Class: req.body.Class,
                 Division: req.body.Division,
                 TeacherName: req.body.TeacherName,
@@ -72,7 +72,7 @@ module.exports = {
     getClass: async (req, res) => {
         const subject = req.params;
         try {
-            const data = await AddClass.findById(subject.id);
+            const data = await AddAdminClass.findById(subject.id);
             res.status(200).json(data);
         } catch (error) {
             console.log(error.message);

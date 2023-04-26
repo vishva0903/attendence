@@ -1,6 +1,8 @@
 import { React, useState } from 'react';
-import '../../styles/teacher/AddAttendance.css'
 import axios from 'axios';
+
+import '../../styles/teacher/AddAttendance.css'
+
 function Attendance() {
 
     const [form, setForm] = useState({})

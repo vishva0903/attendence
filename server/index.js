@@ -4,6 +4,9 @@ const connect = require('./mongodb/config');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const bodyparser = require('body-parser');
+// const routes = require('./routes/StudentRoutes');
+
+const StudentRoutes = require('./routes/StudentRoutes');
 const routes = require('./routes/StudentRoutes');
 const ClassRoute = require('./routes/ClassRoute')
 
@@ -14,6 +17,8 @@ connect();
 
 app.use(bodyparser.json());
 app.use(cors());
-app.use(routes);
-app.use("/ClassRoute", ClassRoute);
+// app.use(routes);
+
+app.use("/StudentRoutes", StudentRoutes);
+
 app.listen(PORT, () => { console.log(`Server started at ${PORT}`) })

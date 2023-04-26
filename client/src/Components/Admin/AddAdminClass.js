@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
-import './AddClass.css';
+import './AddAdminClass.css';
 import axios from 'axios';
-function AddClass() {
+function AddAdminClass() {
 
     const [form, setForm] = useState({})
     const onChangeHandler = (event) => {
@@ -61,4 +61,4 @@ function AddClass() {
         </>
     )
 }
-export default AddClass;
+export default AddAdminClass;

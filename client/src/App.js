@@ -9,7 +9,7 @@ import Login from './Components/Login/login';
 import Signup from './Components/Signup/signup';
 import Password from './Components/Password/password';
 import SDashboard from './Components/Student/SDashboard/dashboard';
-import Regform from './Components/Student/Regform/index';
+import Regform from './Components/Student/Regform/stdregform';
 import Sviewattendance from './Components/Student/Sviewattendance/Sviewattendance';
 import Studenttimetable from './Components/Student/Studenttimetable/Studenttimetable';
 
@@ -30,8 +30,18 @@ import AddTeacher from './Components/teacher/AddTeacher';
 
 // Dashboard
 
-import Dashboard from './components/dashboard/Dashboard';
+import Dashboard from './Components/dashboard/Dashboard';
 
+//vishva//////////////////////////
+
+import AddAdminClass from './Components/Admin/AddAdminClass';
+import DashAdmin from './Components/Admin/DashAdmin';
+import ViewAttendence from './Components/Admin/ViewAttendence';
+import ViewClass from './Components/Admin/ViewClass';
+import ViewReport from './Components/Admin/ViewReport';
+import ViewStudent from './Components/Admin/ViewStudent';
+import ViewSubject from './Components/Admin/ViewSubject';
+import ViewTeacher from './Components/Admin/ViewTeacher';
 /////////////////////////////////////////////////////////////////////////////////
 function App() {
   return (
@@ -68,6 +78,20 @@ function App() {
           <Route path='/dashboard/Dashboard' element={<Dashboard />}></Route>
 
           {/* /////////////////////////////////////////////////////////////////////////////////////////// */}
+
+          {/* Admin */}
+
+          <Route path="/AddAdminClass" element={<AddAdminClass/>} />
+          <Route path="/DashAdmin" element={<DashAdmin/>} />
+          <Route path="/ViewAttendence" element={<ViewAttendence/>} />
+          <Route path="/ViewClass" element={<ViewClass/>} />
+          <Route path="/ViewReport" element={<ViewReport/>} />
+          <Route path="/ViewStudent" element={<ViewStudent/>} />
+          <Route path="/ViewSubject" element={<ViewSubject/>} />
+          <Route path="/ViewTeacher" element={<ViewTeacher/>} />
+
+
+
 
         </Routes>
 

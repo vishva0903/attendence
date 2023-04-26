@@ -35,9 +35,8 @@ function DashAdmin() {
                     </div>
                     <div className='sidebar'>
                         <div className='link'>
-                            <a href='/Admin/StudentLogin'><h4>Student</h4></a>
-                            <a href='/Admin/TeacherLogin'><h4>Teacher</h4></a>
-                            <a href='/Admin/AddClass'><h4>Class</h4></a>
+                            <a href='/ViewStudent'><h4>Student</h4></a>
+                            <a href='/ViewTeacher'><h4>Teacher</h4></a>
                         </div>
                     </div>
                 </div>

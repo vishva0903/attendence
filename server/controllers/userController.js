@@ -54,7 +54,7 @@ module.exports = {
         try {
             if (!isValid) {
                 console.log("Validation error");
-                res.status(404).json(errors);
+                res.status(404).json(errors);                                                                           
             } else {
                 await User.findOne({ email }).then(async (user) => {
                 if (!user) {

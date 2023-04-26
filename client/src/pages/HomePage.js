@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import '../styles/HomePage.css';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import studentimg from '../assets/students.png';
 import teacherimg from '../assets/teacher.png'
 import adminimg from '../assets/admin.png'
+
+import '../styles/HomePage.css';
 
 
 function HomePage() {
