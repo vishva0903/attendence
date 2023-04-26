@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import axios from 'axios';
 import { useDropzone } from 'react-dropzone'
-import '../../styles/teacher/AddStudent.css';
+import '../../styles/teacher/AddTeacher.css';
 function AddStudent() {
 
     const [form, setForm] = useState({})
@@ -52,7 +52,7 @@ function AddStudent() {
 
                 <form className='student-form-box' onSubmit={onSubmitHandler}>
 
-                    <div className='student-heading-div'><h1>ADD STUDENT</h1></div>
+                    <div className='student-heading-div'><h1>TEACHER REGISTRATION FORM</h1></div>
 
                     <div className='student-div'>
 
@@ -78,6 +78,11 @@ function AddStudent() {
                             <div className='student-section-p'>
                                 <label className='p-label'>Email</label>
                                 <input className='p-input' type="email" name="TeacherName" onChange={onChangeHandler}></input>
+                            </div>
+
+                            <div className='student-section-p'>
+                                <label className='p-label'>Qualification</label>
+                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
@@ -142,7 +147,7 @@ function AddStudent() {
 
                             <div className='student-section-check'>
                                 <input id='checkbox' type="checkbox" name="TeacherName" onChange={onChangeHandler}></input>
-                                <label>Same as above</label> <hr id='hr'/>
+                                <label>Same as above</label> <hr id='hr' />
                             </div>
 
                             <div className='student-section-pa'>

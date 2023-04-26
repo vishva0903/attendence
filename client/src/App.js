@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Regform from './Components/Student/Regform/index';
-
 // Teacher
 
 import AddClass from './Components/Teacher/AddClass';
@@ -12,7 +10,6 @@ import RegisterTeacher from './Components/Teacher/RegisterTeacher';
 import Report from './Components/Teacher/Report';
 import dashboard from './Components/Teacher/dashboard';
 
-// import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home/home';
 import Login from './Components/Login/login';
@@ -34,7 +31,6 @@ function App() {
         <Routes>
           <Route path="/Regform" element={<Regform />} />
           <Route path="/AddClass" element={<AddClass />} />
-      <Routes>
         <Route path="/Home" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
@@ -42,7 +38,6 @@ function App() {
         <Route path="/SDashboard" element={<SDashboard />} />
         <Route path="/Regform" element={<Regform />} />
         <Route path="/Sviewattendance" element={<Sviewattendance />} />
-      </Routes>
 
     
        
