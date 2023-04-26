@@ -44,13 +44,6 @@ function Sviewattendance(){
                             <option>C</option>
                             <option>D</option>
                             <option>E</option>
-                            <option>F</option>
-                            <option>G</option>
-                            <option>H</option>
-                            <option>I</option>
-                            <option>J</option>
-                            <option>K</option>
-                            <option>L</option>
                         </select><br></br>
                     </div>
                 </div> 

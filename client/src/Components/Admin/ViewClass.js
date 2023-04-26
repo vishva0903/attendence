@@ -7,7 +7,7 @@ function ViewClass() {
 
     function info(id) {
         console.log(id)
-        axios.get(`http://localhost:5000/${id}`)
+        axios.get(`http://localhost:5000/ClassRoute/Admin/getClass/${id}`)
             .then((response) => {
                 console.log(response.data);
                 setUser(response.data);
@@ -18,7 +18,7 @@ function ViewClass() {
     const token = JSON.parse(localStorage.getItem("user-token"));
     console.log(token);
     function verify() {
-        axios.post("http://localhost:5000/Verifytoken", { token: token })
+        axios.post("http://localhost:5000/ClassRoute/Admin/getClass/Verifytoken", { token: token })
             .then((response) => {
                 console.log(response.data);
                 info(response.data._id);

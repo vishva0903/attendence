@@ -5,6 +5,7 @@
     width: 22rem;
     height: 2rem;
     padding: 0rem;
+    color: #000000;
 }
 
 .ViewClass{
@@ -21,4 +22,9 @@
     box-shadow: 0 0 10px rgba(19, 18, 18, 0.5); 
     margin: auto;
     margin-top: 5rem;
+}
+
+h5{
+    color: rgb(5, 5, 5);
+    margin-top: 6rem;
 }

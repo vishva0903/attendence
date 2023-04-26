@@ -15,7 +15,7 @@ function AddClass() {
     const onSubmitHandler = (event) => {
         console.log(form, "from data")
 
-        axios.post("http://localhost:5000/user123", form)
+        axios.post("http://localhost:5000/ClassRoute/Admin/addClass", form)
             .then((response) => {
                 console.log(response.data);
             })
@@ -39,7 +39,7 @@ function AddClass() {
                     </div>
                     <div className='head'>
                         <label>Teacher Name</label>
-                        <input type="text" name="Teacher Name"  placeholder="Teacher Name" required=""  onChange={onChangeHandler}></input>
+                        <input type="text" name="TeacherName"  placeholder="Teacher Name" required=""  onChange={onChangeHandler}></input>
                     </div>
                     <div className='head'>
                         <label>Classroom Number</label>
@@ -51,7 +51,7 @@ function AddClass() {
                     </div>
                     <div className='head'>
                         <label>Class capacity</label>
-                        <input type="text" name="Class capacity" placeholder="Class capacity" required=""  onChange={onChangeHandler}></input>
+                        <input type="text" name="Classcapacity" placeholder="Class capacity" required=""  onChange={onChangeHandler}></input>
                     </div>
 
                     <button allign="center" type="Submit">Submit</button>

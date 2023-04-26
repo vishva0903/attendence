@@ -1,7 +1,6 @@
 import { React, useState } from 'react';
 import './DashAdmin.css';
-import axios from 'axios';
-import image from '../../assets/logouticon.png'
+import axios from 'axios'
 function DashAdmin() {
 
     const [form, setForm] = useState({})
@@ -31,17 +30,15 @@ function DashAdmin() {
                     <div className='dash'>
                         <h1>Admin</h1>
                         <div class="adicon">
-                            <img class="adicon1" src={image} alt="adicon"></img>
+                            <button type='submit' onChange={onSubmitHandler}>Logout</button>
                         </div>
                     </div>
                     <div className='sidebar'>
                         <div className='link'>
-                            <a href='/ViewStudent'><h5>Student</h5></a>
-                            <a href='/ViewTteacher'><h5>Teacher</h5></a>
+                            <a href='/Admin/StudentLogin'><h4>Student</h4></a>
+                            <a href='/Admin/TeacherLogin'><h4>Teacher</h4></a>
+                            <a href='/Admin/AddClass'><h4>Class</h4></a>
                         </div>
-                    </div>
-                    <div className='but'>
-                        <button type='submit' onChange={onSubmitHandler}>Submit</button>
                     </div>
                 </div>
             </form>
