@@ -1,22 +1,26 @@
 const mongoose = require('mongoose');
 const stdloginSchema = new mongoose.Schema({
     firstName: {
-        required : true,
-        type : String
+        type : String,
+        required : true
+        
     },
     lastName :{
-        required : true,
-        type : String
+        type : String,
+        required : true
+        
     },
-    userId:{
-        required : true,
-        type : String
+    userId :{
+        type : String,
+        required : true
+        
     },
-    password:{
-        required : true,
-        type : String
+    password :{
+        type : String,
+        required : true
+        
     }
 
 });
-const Stdlogin = mongoose.model('stdlogin',stdloginSchema);
+const Stdlogin = mongoose.model('user', stdloginSchema);
 module.exports = Stdlogin;

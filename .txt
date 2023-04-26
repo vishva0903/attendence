@@ -1,0 +1,8 @@
+# Sign up
+
+{
+    "fname" : "Sofiya",
+    "lname" : "Rani",
+    "userId" : "STI18CS026",
+    "password" : "sofi@419"
+}

@@ -5,7 +5,7 @@ import Login from './Components/Login/login';
 import Signup from './Components/Signup/signup';
 import Password from './Components/Password/password';
 import SDashboard from './Components/Student/SDashboard/dashboard';
-import Regform from './Components/Student/Regform/index';
+import Regform from './Components/Student/Regform/stdregform';
 import Sviewattendance from './Components/Student/Sviewattendance/Sviewattendance';
 import Studenttimetable from './Components/Student/Studenttimetable/Studenttimetable';
 
@@ -28,11 +28,6 @@ function App() {
         <Route path="/Sviewattendance" element={<Sviewattendance />} />
         <Route path="/Studenttimetable" element={<Studenttimetable />} />
       </Routes>
-
-    
-       
-
-
       </BrowserRouter>
 
     </>

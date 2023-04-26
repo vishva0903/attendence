@@ -48,14 +48,14 @@ module.exports = {
 
 // Sign in
 
-    Signin: async (req, res) => {
+    Login: async (req, res) => {
         const { userId, password } = req.body;
         const { errors, isValid } = SigninValidator(req.body);
 
         try {
             if (!isValid) {
                 console.log("Validation error");
-                res.status(404).json(errors);
+                res.status(404).json(errors);                                                                           
             } else {
                 await Stdlogin.findOne({ userId }).then(async (user) => {
                 if (!user) {
