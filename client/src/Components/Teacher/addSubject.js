@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import '../../styles/teacher/AddSubject.css';
 import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
+// import { Link, useNavigate } from 'react-router-dom';
 function AddSubject() {
 
     // Navigate
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     // form handler
     const [form, setForm] = useState({})
@@ -20,10 +20,10 @@ function AddSubject() {
     const onSubmitHandler = (event) => {
         console.log(form, "from data")
 
-        axios.post("http://localhost:5000/user123", form)
+        axios.post("http://localhost:5000/addSubjectRoute/addSubjectDetails", form)
             .then((response) => {
                 console.log(response.data);
-                navigate("/");
+                // navigate("/");
             })
             .catch((err) => console.log(err))
         event.preventDefault();
@@ -41,22 +41,22 @@ function AddSubject() {
                     <div className='input-div'>
                         <div className='class-section'>
                             <label className="addclass-label">Subject Name</label>
-                            <input className="addclass-input" type="text" name="Subject Name" onChange={onChangeHandler}></input>
+                            <input className="addclass-input" type="text" name="SubjectName" onChange={onChangeHandler}></input>
                         </div>
                         <div className='class-section'>
                             <label className="addclass-label">Subject Code</label>
-                            <input className="addclass-input" type="text" name="Subject Code" onChange={onChangeHandler}></input>
+                            <input className="addclass-input" type="text" name="SubjectCode" onChange={onChangeHandler}></input>
                         </div>
                         <div className='class-section'>
                             <label className="addclass-label">Subject Teacher</label>
-                            <input className="addclass-input" type="text" name="Subject Teacher" onChange={onChangeHandler}></input>
+                            <input className="addclass-input" type="text" name="SubjectTeacher" onChange={onChangeHandler}></input>
                         </div>
                         <div className='class-section'>
                             <label className="addclass-label">Book Name</label>
-                            <input className="addclass-input" type="text" name="Book Name" onChange={onChangeHandler}></input>
+                            <input className="addclass-input" type="text" name="BookName" onChange={onChangeHandler}></input>
                         </div>
                     </div>
-                    <button className='btn-addclass' align="center" type="Submit">Submit</button>
+                    <button className='btn-addclass' align="center" type="Submit" onChange={onChangeHandler}>Submit</button>
 
                 </form >
 

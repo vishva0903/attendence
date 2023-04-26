@@ -7,6 +7,7 @@ function Regform(){
     const[rollno, setRollno] = useState(" ");
     const[dob, setDob] = useState(" ");
     const[age, setAge] = useState(" ");
+    const[bldgrp, setBldgrp] = useState(" ");
     // const[gender, setGender] = useState(" ");
     const[address, setAddress] = useState(" ");
     const[phnno, setPhnno] = useState(" ");
@@ -19,7 +20,7 @@ function Regform(){
     
 
     function handleSubmit() {
-        alert(name, grade, admno, rollno, dob, age, address, phnno, email, fathername, fatherphn, mothername, motherphn, emrgphn)
+        alert(name, grade, admno, rollno, dob, age, bldgrp, address, phnno, email, fathername, fatherphn, mothername, motherphn, emrgphn)
        
        
     }
@@ -28,15 +29,17 @@ function Regform(){
     return( <><div class="body"><h1>REGISTRATION FORM</h1><br></br>
         <div class="heading1"><h3>PERSONAL DETAILS</h3></div>
         <label>
-            <div class="fnam">
-                <div class="fnam1">First Name </div>
-                <div class="fnam2"><input type = "text" value = {name} onChange = {(e) => setName(e.target.value)} /><br></br></div>
+            <div class="regname">
+                <div class="fnam">
+                    <div class="fnam1">First Name </div>
+                    <div class="fnam2"><input class="inputfnam" type = "text" value = {name} onChange = {(e) => setName(e.target.value)} /><br></br></div>
+                </div>
+                <div class="lnam">
+                    <div class="lnam1">Last Name </div>
+                    <div class="lnam2"><input type = "text" value = {name} onChange = {(e) => setName(e.target.value)} /><br></br></div>
+                </div>
             </div>
-            <div class="lnam">
-                <div class="lnam1">Last Name </div>
-                <div class="lnam2"><input type = "text" value = {name} onChange = {(e) => setName(e.target.value)} /><br></br></div>
-            </div>
-            <div class="grade">
+            {/* <div class="grade">
                 <div class="grade1">Class </div>
                 <div class="grade2"><input type = "text" value = {grade} onChange = {(e) => setGrade(e.target.value)} /><br></br></div>
             </div>
@@ -47,6 +50,24 @@ function Regform(){
             <div class="rollno">
                 <div class="rollno1">Rollno </div>
                 <div class="rollno2"><input type = "text" value = {rollno} onChange = {(e) => setRollno(e.target.value)} /><br></br></div>
+            </div> */}
+            <div class="gender">
+                <div class="gender1">Gender </div>
+                <div class="gender2">
+                    <div class="type1">
+                        <input type="radio" id="name" name="opt1"></input> 
+                            <label for="name">  </label>
+                            <label class="male" for="name">Male</label>
+                    </div>
+                    <div class="type2">
+                        <input type="radio" id="name" name="opt1"></input> 
+                            <label class="female" for="name">Female</label>
+                    </div>
+                    <div class="type3">
+                        <input type="radio" id="name" name="opt1"></input>
+                            <label class="other" for="name">Other</label>
+                    </div>   
+                </div>
             </div>
             <div class="dob">
                 <div class="dob1">DOB </div>
@@ -56,18 +77,9 @@ function Regform(){
                 <div class="age1">Age </div>
                 <div class="age2"><input type = "number" value = {age} onChange = {(e) => setAge(e.target.value)} /><br></br></div>
             </div>
-            <div class="gender">
-                <div class="gender1">Gender </div>
-                <div class="gender2">
-                    <div>
-                        <input type="radio" id="name" name="opt1"></input> 
-                            <label for="name">Male</label>
-                    </div>
-                    <div class="type">
-                        <input type="radio" id="name" name="opt1"></input>
-                            <label for="name">Female</label>
-                    </div>   
-                </div>
+            <div class="age">
+                <div class="age1">Blood Group </div>
+                <div class="age2"><input type = "number" value = {bldgrp} onChange = {(e) => setBldgrp(e.target.value)} /><br></br></div>
             </div>
             <div class="address">
                 <div class="address1">Permanent Address</div>

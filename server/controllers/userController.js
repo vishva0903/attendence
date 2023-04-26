@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 // User model
-const Student = require("../models/studentSchema");
+const User = require("../models/userSchema");
 
 // Input validation
 const SignupValidator = require("../validator/signupValidator");
@@ -22,18 +22,18 @@ module.exports = {
         if (!isValid) {
             res.status(404).json(errors);
         } else {
-            await Student.findOne({ email }).then(async (exist) => {
+            await User.findOne({ email }).then(async (exist) => {
             if (exist) {
                 errors.email = "Email already in use";
                 res.status(404).json(errors);
             } else {
                 const hashedpassword = bcrypt.hashSync(password, 8);
-                const result = await Student.create({
+                const result = await User.create({
                 firstName,
                 lastName,
                 email,
                 password: hashedpassword,
-                role: "student",
+                role: "user",
                 courseReg: "false"
                 });
                 res.status(201).json({ message: "user added with success" });
@@ -56,20 +56,20 @@ module.exports = {
                 console.log("Validation error");
                 res.status(404).json(errors);
             } else {
-                await Student.findOne({ email }).then(async (student) => {
-                if (!student) {
+                await User.findOne({ email }).then(async (user) => {
+                if (!user) {
                     errors.email =
                     "Email does not exist ! please Enter the right Email or You can make account";
                     res.status(404).json(errors);
                 }
                 // Compare sent in password with found user hashed password
-                const passwordMatch = bcrypt.compareSync(password, student.password);
+                const passwordMatch = bcrypt.compareSync(password, user.password);
                 if (!passwordMatch) {
                     errors.password = "Wrong Password";
                     res.status(404).json(errors);
                 } else {
                     // generating a token and storing it in a cookie
-                        const token = jwt.sign({ _id: student._id, role: student.role }, "sooraj_DOING_GOOD",
+                        const token = jwt.sign({ _id: user._id, role: user.role }, "sooraj_DOING_GOOD",
                         {
                             expiresIn: "8h",
                         });
@@ -79,9 +79,9 @@ module.exports = {
                             sameSite: "lax",
                         };
                         const data = {
-                            id: student._id,
+                            id: user._id,
                         };
-                        res.status(201).json({ token, role: student.role });
+                        res.status(201).json({ token, role: user.role });
                         000
                 }
                 });

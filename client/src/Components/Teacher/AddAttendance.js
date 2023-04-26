@@ -15,7 +15,7 @@ function Attendance() {
     const onSubmitHandler = (event) => {
         console.log(form, "from data")
 
-        axios.post("http://localhost:5000/user123", form)
+        axios.post("http://localhost:5000/attendanceRoute/addAttendanceDetails", form)
             .then((response) => {
                 console.log(response.data);
             })

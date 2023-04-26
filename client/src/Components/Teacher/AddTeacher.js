@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import axios from 'axios';
 import { useDropzone } from 'react-dropzone'
-import '../../styles/teacher/AddTeacher.css';
+import '../../styles/teacher/AddStudent.css';
 function AddStudent() {
 
     const [form, setForm] = useState({})
@@ -16,7 +16,7 @@ function AddStudent() {
     const onSubmitHandler = (event) => {
         console.log(form, "from data")
 
-        axios.post("http://localhost:5000/user123", form)
+        axios.post("http://localhost:5000/addTeacherRoute/addTeacherDetails", form)
             .then((response) => {
                 console.log(response.data);
             })
@@ -52,7 +52,7 @@ function AddStudent() {
 
                 <form className='student-form-box' onSubmit={onSubmitHandler}>
 
-                    <div className='student-heading-div'><h1>TEACHER REGISTRATION FORM</h1></div>
+                    <div className='student-heading-div'><h1>TEACHER REGISTERATION FORM</h1></div>
 
                     <div className='student-div'>
 
@@ -67,52 +67,47 @@ function AddStudent() {
 
                             <div className='student-section-p'>
                                 <label className='p-label'>First Name</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="text" name="FirstName" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Last Name</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="text" name="LastName" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Email</label>
-                                <input className='p-input' type="email" name="TeacherName" onChange={onChangeHandler}></input>
-                            </div>
-
-                            <div className='student-section-p'>
-                                <label className='p-label'>Qualification</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="email" name="Email" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Phone Number</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="number" name="PhoneNo" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>DOB</label>
-                                <input className='p-input' type="date" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="date" name="DOB" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Blood Group</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="text" name="BloodGroup" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='gender'>
                                 <label className='gender-h'>Gender </label><br />
                                 <div className='gender-box'>
                                     <div className='gender-box1'>
-                                        <input className='gender-input' type="radio" name="Division" onChange={onChangeHandler}></input>
+                                        <input className='gender-input' type="radio" name="Gender" onChange={onChangeHandler}></input>
                                         <label className='gender-label'>Female</label>
                                     </div>
                                     <div className='gender-box2'>
-                                        <input className='gender-input' type="radio" name="Division" onChange={onChangeHandler}></input>
+                                        <input className='gender-input' type="radio" name="Gender" onChange={onChangeHandler}></input>
                                         <label className='gender-label'>Male</label>
                                     </div>
                                     <div className='gender-box3'>
-                                        <input className='gender-input' type="radio" name="Division" onChange={onChangeHandler}></input>
+                                        <input className='gender-input' type="radio" name="Gender" onChange={onChangeHandler}></input>
                                         <label className='gender-label'>Other</label>
                                     </div>
 
@@ -128,44 +123,44 @@ function AddStudent() {
 
                             <div className='student-section-pa'>
                                 <label className='pa'>Communication Address</label>
-                                <textarea className='pa-textarea' name="" id="" cols="60" rows="3"></textarea> <br />
+                                <textarea className='pa-textarea' name="CommAddress" id="" cols="60" rows="3"></textarea> <br />
                             </div>
 
                             <div className='student-section-s'>
                                 <div className='student-section-s'>
-                                    <input id='state' className='s-input' placeholder='state' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                    <input id='state' className='s-input' placeholder='state' type="text" name="State" onChange={onChangeHandler}></input>
                                 </div>
 
                                 <div className='student-section-s'>
-                                    <input id='city' className='s-input' placeholder='City' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                    <input id='city' className='s-input' placeholder='City' type="text" name="CityORTown" onChange={onChangeHandler}></input>
                                 </div>
 
                                 <div className='student-section-s'>
-                                    <input id='pincode' className='s-input' placeholder='PIN Code' type="number" name="TeacherName" onChange={onChangeHandler}></input>
+                                    <input id='pincode' className='s-input' placeholder='PIN Code' type="number" name="PINCode" onChange={onChangeHandler}></input>
                                 </div>
                             </div>
 
                             <div className='student-section-check'>
-                                <input id='checkbox' type="checkbox" name="TeacherName" onChange={onChangeHandler}></input>
-                                <label>Same as above</label> <hr id='hr' />
+                                <input id='checkbox' type="checkbox" name="checkbox" onChange={onChangeHandler}></input>
+                                <label>Same as above</label> <hr id='hr'/>
                             </div>
 
                             <div className='student-section-pa'>
                                 <label className='pa'>Permanent Address</label>
-                                <textarea className='pa-textarea' name="" id="" cols="60" rows="3"></textarea> <br />
+                                <textarea className='pa-textarea' name="PermAddress" id="" cols="60" rows="3"></textarea> <br />
                             </div>
 
                             <div className='student-section-s'>
                                 <div className='student-section-s'>
-                                    <input id='state' className='s-input' placeholder='state' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                    <input id='state' className='s-input' placeholder='state' type="text" name="PState" onChange={onChangeHandler}></input>
                                 </div>
 
                                 <div className='student-section-s'>
-                                    <input id='city' className='s-input' placeholder='City' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                    <input id='city' className='s-input' placeholder='City' type="text" name="PCityORTown" onChange={onChangeHandler}></input>
                                 </div>
 
                                 <div className='student-section-s'>
-                                    <input id='pincode' className='s-input' placeholder='PIN Code' type="number" name="TeacherName" onChange={onChangeHandler}></input>
+                                    <input id='pincode' className='s-input' placeholder='PIN Code' type="number" name="PPINCode" onChange={onChangeHandler}></input>
                                 </div>
                             </div>
 
@@ -177,42 +172,42 @@ function AddStudent() {
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Father Name</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="text" name="FatherName" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Father Phone</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="number" name="FatherPhone" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Father's Email</label>
-                                <input className='p-input' type="email" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="email" name="FatherEmail" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Father's Occupation</label>
-                                <input className='p-input' type="email" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="text" name="FatherOccupation" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Mother Name</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="text" name="MotherName" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Mother Phone</label>
-                                <input className='p-input' type="text" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="number" name="MotherPhone" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Mother's Email</label>
-                                <input className='p-input' type="email" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="email" name="MotherEmail" onChange={onChangeHandler}></input>
                             </div>
 
                             <div className='student-section-p'>
                                 <label className='p-label'>Mother's Occupation</label>
-                                <input className='p-input' type="email" name="TeacherName" onChange={onChangeHandler}></input>
+                                <input className='p-input' type="text" name="MotherOccupation" onChange={onChangeHandler}></input>
                             </div>
 
                         </div>
@@ -222,10 +217,10 @@ function AddStudent() {
                         <div className="school-details ">
 
                             <div className="Date">
-                                <input placeholder='Joining Date' className='design' type="text" name="date" onChange={onChangeHandler}></input>
+                                <input placeholder='Joining Date' className='design' type="text" name="JoiningDate" onChange={onChangeHandler}></input>
                             </div>
                             <div className='Select-Class'>
-                                <select className='design'>
+                                <select className='design' name='SelectClass'>
                                     <option>Select Class</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -242,7 +237,7 @@ function AddStudent() {
                                 </select>
                             </div>
                             <div className='Division'>
-                                <select className='design'>
+                                <select className='design' name='Division'>
                                     <option>Division</option>
                                     <option>A</option>
                                     <option>B</option>
@@ -253,12 +248,12 @@ function AddStudent() {
                             </div>
 
                             <div className='student-section-3'>
-                                <input className='design-roll' id='rno' type="number" name="TeacherName" placeholder='Roll No' onChange={onChangeHandler}></input>
+                                <input className='design-roll' id='rno' type="number" name="RollNo" placeholder='Roll No' onChange={onChangeHandler}></input>
                             </div>
 
                         </div>
 
-                        <button className='btn-student' type="Submit">Submit</button>
+                        <button className='btn-student' type="Submit" OnChange={onChangeHandler}>Submit</button>
 
                     </div>
 
