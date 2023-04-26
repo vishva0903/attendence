@@ -22,15 +22,15 @@ import HomePage from './pages/HomePage';
 
 // Teacher
 
-import AddClass from './components/teacher/AddClass';
-import AddSubject from './components/teacher/AddSubject';
-import AddAttendance from './components/teacher/AddAttendance';
-import AddStudent from './components/teacher/AddStudent';
-import AddTeacher from './components/teacher/AddTeacher';
+import AddClass from './Components/teacher/AddClass';
+import AddSubject from './Components/teacher/AddSubject';
+import AddAttendance from './Components/teacher/AddAttendance';
+import AddStudent from './Components/teacher/AddStudent';
+import AddTeacher from './Components/teacher/AddTeacher';
 
 // Dashboard
 
-import Dashboard from './components/dashboard/Dashboard';
+import Dashboard from './Components/dashboard/Dashboard';
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -49,8 +49,7 @@ function App() {
         <Route path="/Regform" element={<Regform />} />
         <Route path="/Sviewattendance" element={<Sviewattendance />} />
         <Route path="/Studenttimetable" element={<Studenttimetable />} />
-      </Routes>
-        <Routes>
+  
           <Route path="/Regform" element={<Regform />} />
           <Route path="/AddClass" element={<AddClass />} />
           <Route path="/Home" element={<Home />} />
