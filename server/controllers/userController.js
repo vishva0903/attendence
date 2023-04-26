@@ -2,8 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 // User model
-const Stdlogin = require("../models/StdLoginSchema");
-
+const User = require("../models/userSchema");
 
 // Input validation
 const SignupValidator = require("../validator/signupValidator");
@@ -16,23 +15,23 @@ module.exports = {
 // Sign up
 
     Signup: async (req, res) => {
-        const { firstName, lastName, userId, password } = req.body;
+        const { firstName, lastName, email, password } = req.body;
         const { errors, isValid } = SignupValidator(req.body);
 
         try {
         if (!isValid) {
             res.status(404).json(errors);
         } else {
-            await Stdlogin.findOne({ userId }).then(async (exist) => {
+            await User.findOne({ email }).then(async (exist) => {
             if (exist) {
-                errors.userId = "User already exist";
+                errors.email = "Email already in use";
                 res.status(404).json(errors);
             } else {
                 const hashedpassword = bcrypt.hashSync(password, 8);
-                const result = await Stdlogin.create({
+                const result = await User.create({
                 firstName,
                 lastName,
-                userId,
+                email,
                 password: hashedpassword,
                 role: "user",
                 courseReg: "false"
@@ -49,7 +48,7 @@ module.exports = {
 // Sign in
 
     Signin: async (req, res) => {
-        const { userId, password } = req.body;
+        const { email, password } = req.body;
         const { errors, isValid } = SigninValidator(req.body);
 
         try {
@@ -57,20 +56,18 @@ module.exports = {
                 console.log("Validation error");
                 res.status(404).json(errors);
             } else {
-                await Stdlogin.findOne({ userId }).then(async (user) => {
+                await User.findOne({ email }).then(async (user) => {
                 if (!user) {
-                    errors.userId =
-                    "User does not exist ! please Enter the right UserId or You can make account";
+                    errors.email =
+                    "Email does not exist ! please Enter the right Email or You can make account";
                     res.status(404).json(errors);
                 }
-
                 // Compare sent in password with found user hashed password
                 const passwordMatch = bcrypt.compareSync(password, user.password);
                 if (!passwordMatch) {
                     errors.password = "Wrong Password";
                     res.status(404).json(errors);
                 } else {
-
                     // generating a token and storing it in a cookie
                         const token = jwt.sign({ _id: user._id, role: user.role }, "sooraj_DOING_GOOD",
                         {
