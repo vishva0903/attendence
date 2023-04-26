@@ -7,6 +7,8 @@ const bodyparser = require('body-parser');
 // const routes = require('./routes/StudentRoutes');
 
 const StudentRoutes = require('./routes/StudentRoutes');
+const routes = require('./routes/StudentRoutes');
+const ClassRoute = require('./routes/ClassRoute')
 
 dotenv.config()
 

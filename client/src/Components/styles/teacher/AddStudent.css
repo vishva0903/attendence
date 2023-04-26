@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.student-main-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0rem 5rem 0rem;
+
+}
+
+.student-heading-div {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.student-heading-div h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5rem 0 2rem 0;
+
+}
+
+.student-form-box {
+    width: 65%;
+    height: 100%;
+    padding: 0rem 5rem 0 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.student-div {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.h6-div {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.student-h6-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin: 2rem 0 2rem 0;
+    background-color: aquamarine;
+    padding: 6px;
+
+}
+
+.emp-image-upload {
+    margin: 0;
+    padding: 0%;
+    width: 40%;
+    text-align: start;
+}
+
+.emp-selected-image {
+    width: 8rem;
+}
+
+.dispaly-img {
+    width: 65%;
+}
+
+.pd-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.gender {
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 8rem 0 5.2rem;
+}
+.gender-h {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-right: 10rem;
+}
+.gender-box {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gender-box1 {
+    display: flex;
+    flex-direction: row;
+}
+.gender-box2 {
+    display: flex;
+    flex-direction: row;
+}
+.gender-box3 {
+    display: flex;
+    flex-direction: row;
+}
+.gender-label {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    align-items: center;
+}
+.gender-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin: none;
+    margin-right: 15px;
+}
+input[type='radio']{
+    width: 20px;
+    height: 25px;
+    border: none;
+}
+
+.student-section-check {
+    text-align: start;
+    margin: 4rem 0 4rem 0;
+}
+
+#checkbox {
+    margin-right: 1rem;
+}
+
+.student-section-s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.s-input {
+    width: 100%;
+    padding: 0 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+    min-height: 36px;
+    background-color: #ffffff;
+    border: 1px solid rgba(36, 28, 21, 0.3);
+    transition: all 0.2s ease-in-out 0s;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.student-section-pa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pa {
+    width: 50%;
+    text-align: start;
+}
+
+.pa-textarea {
+    width: 100%;
+}
+
+#state {
+    width: 20rem;
+    text-align: center;
+}
+
+#city {
+    width: 20rem;
+    text-align: center;
+}
+
+#pincode {
+    width: 8rem;
+    text-align: center;
+}
+
+.student-section-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.p-label {
+    width: 30%;
+    text-align: left;
+}
+
+.p-input {
+    width: 50%;
+    padding: 0 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+    min-height: 36px;
+    background-color: #ffffff;
+    border: 1px solid rgba(36, 28, 21, 0.3);
+    transition: all 0.2s ease-in-out 0s;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.p-input:focus {
+    outline: none;
+    border: 1px solid #007c89;
+    box-shadow: inset 0 0 0 1px #007c89;
+}
+
+
+.school-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.student-section-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.design {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    vertical-align: baseline;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: .16px;
+    border-radius: 0;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background-color: #f4f4f4;
+    padding: 0 16px;
+    color: #161616;
+    transition: background-color 70ms cubic-bezier(.2, 0, .38, .9), outline 70ms cubic-bezier(.2, 0, .38, .9);
+}
+
+.design-roll {
+    width: 7rem;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    font-family: inherit;
+    font-size: 14px;
+    vertical-align: baseline;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: .16px;
+    border-radius: 0;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background-color: #f4f4f4;
+    padding: 0 16px;
+    color: #161616;
+    transition: background-color 70ms cubic-bezier(.2, 0, .38, .9), outline 70ms cubic-bezier(.2, 0, .38, .9);
+}
+
+#rno {
+    font-weight: bold;
+    color: black;
+}
+
+.btn-student {
+    width: 35%;
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 3rem 0 5rem 0;
+}
+
+.btn-student {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}

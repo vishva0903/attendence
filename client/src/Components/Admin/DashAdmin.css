@@ -1,0 +1,48 @@
+body{
+    background-color: gainsboro;   
+}   
+h1{
+    text-align: center;
+    padding: 1.5rem;
+    color: black;
+}
+.dash{
+    margin-top: -1.5rem;
+    background-color: whitesmoke;
+}
+.sidebar{
+    
+    margin-top: -11.9rem;
+    background-color: black;
+    flex-direction: column;
+    display: flex;
+    max-width: 15rem;
+    height: 100vh;
+}
+.link{
+    color: rgb(233, 233, 218);
+    margin-top: 12rem;
+    text-align: center;
+}
+h4{
+    color: rgb(248, 245, 245);
+    margin-bottom: 25%;
+}
+.adicon{
+    width: 5%;
+    height: 65%;
+    margin-left: 95%; 
+    margin-bottom: 1%;
+    margin-top: .5%;
+}
+.adicon1{
+   width: 45%;
+   height: 90%;
+   margin-left: 35%;
+
+}
+.button{
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
